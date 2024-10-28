@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Comida Deliciosa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleInstructions(id) {
+            const instructions = document.getElementById(id);
+            instructions.style.display = instructions.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>RECETAS</h1>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h2>Las mejores recetas de comida para cada ocasión</h2>
+            <p>En Recetas encuentras una amplia variedad de platillos pensados para cada momento del día: desde desayunos que te llenarán de energía, almuerzos nutritivos y cenas para disfrutar en compañía, hasta postres irresistibles para el toque final perfecto. Cada receta está diseñada para que cocinar en casa sea accesible, divertido y, sobre todo, delicioso.</p>
+        </section>
+
+        <section id="desayuno" class="center-section">
+            <h2>Desayuno</h2>
+            <div class="flex-container">
+                <article>
+                    <div class="card">
+                        <img src="pancakes.jpg" alt="Pancakes" class="food-image">
+                        <h3>Pancakes</h3>
+                        <button onclick="toggleInstructions('instructions4')">Ver Receta</button>
+                        <div id="instructions4" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>1 taza de harina de trigo<br>
+                            2 cucharadas de azúcar<br>
+                            1 cucharadita de polvo de hornear<br>
+                            ½ cucharadita de bicarbonato de sodio<br>
+                            ¼ cucharadita de sal<br>
+                            1 huevo<br>
+                            1 taza de leche<br>
+                            2 cucharadas de mantequilla derretida</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Mezcla todos los ingredientes en un tazón hasta obtener una masa homogénea.</p>
+                            <p>2. Calienta una sartén a fuego medio y vierte un poco de masa.</p>
+                            <p>3. Cocina hasta que aparezcan burbujas en la superficie, luego voltea y cocina por el otro lado.</p>
+                            <p>4. Sirve con miel, jarabe de arce o frutas.</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <img src="chilaquiles.jpg" alt="Chilaquiles" class="food-image">
+                        <h3>Chilaquiles</h3>
+                        <button onclick="toggleInstructions('instructions5')">Ver Receta</button>
+                        <div id="instructions5" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>8 tortillas de maíz<br>
+                            1 taza de salsa verde o roja<br>
+                            1/2 taza de crema<br>
+                            1/2 taza de queso fresco desmoronado<br>
+                            1/4 de cebolla (opcional)<br>
+                            1 aguacate (opcional)</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Corta las tortillas en triángulos y fríelas en aceite caliente hasta que estén doradas.</p>
+                            <p>2. Escurre el exceso de aceite y coloca las tortillas en un plato.</p>
+                            <p>3. Calienta la salsa y vierte sobre las tortillas.</p>
+                            <p>4. Agrega crema, queso fresco, cebolla y aguacate al gusto.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="almuerzo" class="center-section">
+            <h2>Almuerzo</h2>
+            <div class="flex-container">
+                <article>
+                    <div class="card">
+                        <img src="pasta.jpeg" alt="Pasta" class="food-image">
+                        <h3>Pasta Alfredo</h3>
+                        <button onclick="toggleInstructions('instructions6')">Ver Receta</button>
+                        <div id="instructions6" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>200 g de pasta<br>
+                            50 g de albahaca fresca<br>
+                            30 g de piñones<br>
+                            50 g de queso parmesano<br>
+                            100 ml de aceite de oliva<br>
+                            Sal y pimienta al gusto</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Cocina la pasta según las instrucciones del paquete.</p>
+                            <p>2. Mezcla albahaca, piñones, ajo y aceite de oliva para hacer el pesto.</p>
+                            <p>3. Mezcla la pasta con el pesto y sirve.</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <img src="hamburgues.jpg" alt="Smash Burger" class="food-image">
+                        <h3>Smash Burger</h3>
+                        <button onclick="toggleInstructions('instructions1')">Ver Receta</button>
+                        <div id="instructions1" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>400 g de carne de res molida (80% carne y 20% grasa)<br>
+                            Sal y pimienta al gusto<br>
+                            Rebanadas de queso americano o cheddar<br>
+                            Pan para hamburguesas<br>
+                            Aceite para cocinar<br>
+                            Ingredientes opcionales: lechuga, tomate, pepinillos, cebolla, mayonesa, mostaza y ketchup</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Divide la carne molida en bolas de aproximadamente 100 g cada una.</p>
+                            <p>2. Calienta una plancha o sartén a fuego alto y agrega un poco de aceite.</p>
+                            <p>3. Coloca una bola de carne en la sartén caliente y aplástala con una espátula para que quede delgada.</p>
+                            <p>4. Sazona con sal y pimienta, y cocina hasta que los bordes estén crujientes (unos 2 minutos).</p>
+                            <p>5. Voltea la carne, coloca una rebanada de queso y cocina hasta que el queso se derrita.</p>
+                            <p>6. Tuesta ligeramente el pan y ensambla la hamburguesa con los ingredientes que prefieras.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="cena" class="center-section">
+            <h2>Cena</h2>
+            <div class="flex-container">
+                <article>
+                    <div class="card">
+                        <img src="pizza.jpg" alt="Pizza" class="food-image">
+                        <h3>Pizza Casera</h3>
+                        <button onclick="toggleInstructions('instructions7')">Ver Receta</button>
+                        <div id="instructions7" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>2 tazas de harina de trigo<br>
+                            1 cucharadita de sal<br>
+                            1 cucharadita de azúcar<br>
+                            1 cucharadita de levadura seca<br>
+                            3/4 taza de agua tibia<br>
+                            1 cucharada de aceite de oliva<br>
+                            Salsa de tomate, queso y tus ingredientes favoritos</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Mezcla la harina, sal, azúcar y levadura en un tazón.</p>
+                            <p>2. Agrega el agua tibia y el aceite, y amasa hasta obtener una masa suave.</p>
+                            <p>3. Deja reposar la masa durante 1 hora.</p>
+                            <p>4. Extiende la masa, agrega salsa, queso y tus ingredientes favoritos.</p>
+                            <p>5. Hornea a 220°C durante 15-20 minutos.</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <img src="sushi.jpg" alt="Sushi" class="food-image">
+                        <h3>Sushi California Roll</h3>
+                        <button onclick="toggleInstructions('instructions3')">Ver Receta</button>
+                        <div id="instructions3" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>1 taza de arroz para sushi<br>
+                            1 ¼ taza de agua<br>
+                            3 cucharadas de vinagre de arroz<br>
+                            1 cucharada de azúcar<br>
+                            ½ cucharadita de sal<br>
+                            Algas nori<br>
+                            1 aguacate (en tiras)<br>
+                            1 pepino (en tiras)<br>
+                            150 g de surimi (palitos de cangrejo) en tiras<br>
+                            Semillas de sésamo (opcional)</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Lava el arroz varias veces hasta que el agua salga clara, luego cuécelo con el agua.</p>
+                            <p>2. Mezcla vinagre, azúcar y sal, caliéntalo y agrégalo al arroz cuando esté cocido; deja enfriar.</p>
+                            <p>3. Coloca una hoja de nori en una esterilla para sushi y extiende una capa delgada de arroz.</p>
+                            <p>4. Espolvorea sésamo y voltea el alga (el arroz debe quedar abajo).</p>
+                            <p>5. Coloca tiras de aguacate, pepino y surimi en el centro.</p>
+                            <p>6. Enrolla firmemente y corta en 8 piezas.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="postre" class="center-section">
+            <h2>Postre</h2>
+            <div class="flex-container">
+                <article>
+                    <div class="card">
+                        <img src="pastel.jpg" alt="Tarta de Chocolate" class="food-image">
+                        <h3>Pastel de Chocolate</h3>
+                        <button onclick="toggleInstructions('instructions2')">Ver Receta</button>
+                        <div id="instructions2" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>1 ½ tazas de harina de trigo<br>
+                            1 taza de azúcar<br>
+                            ¾ taza de cacao en polvo<br>
+                            1 ½ cucharaditas de polvo de hornear<br>
+                            1 ½ cucharaditas de bicarbonato de sodio<br>
+                            1 cucharadita de sal<br>
+                            2 huevos<br>
+                            1 taza de leche<br>
+                            ½ taza de aceite vegetal<br>
+                            2 cucharaditas de extracto de vainilla<br>
+                            1 taza de agua hirviendo</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Precalienta el horno a 180°C y engrasa y enharina dos moldes para pastel de 20 cm.</p>
+                            <p>2. En un tazón grande, mezcla harina, azúcar, cacao, polvo de hornear, bicarbonato y sal.</p>
+                            <p>3. Agrega los huevos, leche, aceite y vainilla; bate hasta obtener una mezcla homogénea.</p>
+                            <p>4. Incorpora el agua hirviendo (la mezcla se verá líquida, pero es normal).</p>
+                            <p>5. Divide la mezcla en los moldes y hornea de 30 a 35 minutos, o hasta que al insertar un palillo, salga limpio.</p>
+                            <p>6. Deja enfriar antes de desmoldar y decora con tu cobertura favorita.</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <img src="pie.jpg" alt="Pie de Limón" class="food-image">
+                        <h3>Pie de Limón</h3>
+                        <button onclick="toggleInstructions('instructions8')">Ver Receta</button>
+                        <div id="instructions8" class="instructions" style="display: none;">
+                            <h4>Ingredientes:</h4>
+                            <p>1 base de galleta (puede ser comprada o hecha en casa)<br>
+                            1 lata de leche condensada<br>
+                            1/2 taza de jugo de limón<br>
+                            3 yemas de huevo<br>
+                            Ralladura de limón (opcional)<br>
+                            Merengue (opcional)</p>
+                            <h4>Instrucciones:</h4>
+                            <p>1. Precalienta el horno a 180°C.</p>
+                            <p>2. Mezcla la leche condensada, el jugo de limón y las yemas hasta obtener una mezcla homogénea.</p>
+                            <p>3. Vierte la mezcla en la base de galleta y hornea durante 15 minutos.</p>
+                            <p>4. Si deseas, cubre con merengue y hornea por 5 minutos más.</p>
+                            <p>5. Deja enfriar y sirve frío.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Blog de Comida Deliciosa</p>
+    </footer>
+</body>
+</html>
